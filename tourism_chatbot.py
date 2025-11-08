@@ -3,7 +3,7 @@ import requests
 from datetime import datetime
 
 # === CONFIG ===
-GROQ_API_KEY = "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"  # Replace with your actual key
+GROQ_API_KEY = "GROQ_API_KEY"  # Replace with your actual key
 API_URL = "https://api.groq.com/openai/v1/chat/completions"
 HEADERS = {
     "Authorization": f"Bearer {GROQ_API_KEY}",
@@ -69,3 +69,4 @@ for msg in st.session_state.chat_history[1:]:
 
 # === TIMESTAMP ===
 st.sidebar.markdown(f"🔄 Last update: {datetime.now():%Y-%m-%d %H:%M:%S}")
+
